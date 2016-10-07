@@ -18,6 +18,11 @@ function main(){
 	// 
 	// Conseils : avancez étape par étape, console.log et debugger autant que nécessaires !
 	
+	$('.button').click(function(){
+		var animalName = $(this).data('animal');
+		var imgJpg = species[animalName];
+		$('#holder').html('<img src=\"img/' + imgJpg + '\"/>');
+	});
 	
 	 
 }
